@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rwanda_gorilla"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CheckinActivity">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="20sp"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/rwandair_logo"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muraho"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:gravity="center_horizontal"
+            android:textFontWeight="500"
+            android:padding="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the  Rwandair Check In App"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check-in on this app from the comfort of your home or office anytime within 1 and 30 hours before your flight departure and reduce your waiting time at airport queues. Enter your booking reference number and surname below then click “Start Check-In” to proceed."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginTop="16sp"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:gravity="center_horizontal" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/referenceNoTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            app:boxBackgroundColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            app:endIconDrawable="@drawable/ic_info_outline_black_24dp"
+            app:endIconMode="custom"
+            app:hintTextColor="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Reference No"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/surnameTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            app:boxBackgroundColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            app:endIconDrawable="@drawable/ic_info_outline_black_24dp"
+            app:endIconMode="custom"
+            app:hintTextColor="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/checkInPageBtn"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/check_in_btn_text"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            app:elevation="1dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
