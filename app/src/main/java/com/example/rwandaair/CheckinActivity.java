@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -17,21 +19,23 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class CheckinActivity extends AppCompatActivity {
 
-    TextInputLayout referenceNoTextInputField;
+    EditText referenceNoEditTextInputField;
+    ImageView checkinGuideIcon;
     Button checkInButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkin);
-        referenceNoTextInputField = (TextInputLayout) findViewById(R.id.referenceNoTextInput);
+        referenceNoEditTextInputField = (EditText) findViewById(R.id.referenceNoEditTextInput);
+        checkinGuideIcon = (ImageView) findViewById(R.id.more_info_checkin_icon);
         checkInButton = (Button) findViewById(R.id.startCheckInBtn);
         checkInMoreInfoButtonClick();
         startCheckInClick();
     }
 
     public void checkInMoreInfoButtonClick() {
-        referenceNoTextInputField.setEndIconOnClickListener(new View.OnClickListener() {
+        checkinGuideIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast toast = Toast.makeText(getApplicationContext(), "Show check in guide", Toast.LENGTH_SHORT);

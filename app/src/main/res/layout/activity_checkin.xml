@@ -71,60 +71,70 @@
             android:paddingRight="16sp"
             android:gravity="center_horizontal" />
 
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/referenceNoTextInput"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            app:boxBackgroundColor="@color/colorPrimary"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            app:endIconDrawable="@drawable/ic_info_outline_black_24dp"
-            app:endIconMode="custom"
-            app:hintTextColor="@color/colorAccent">
+            android:background="@color/colorPrimary"
+            android:gravity="center">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/referenceNoEditTextInput"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:hint="Reference No"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
+                android:padding="8sp"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/surnameTextInput"
+            <ImageView
+                android:id="@+id/more_info_checkin_icon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="8sp"
+                android:src="@drawable/ic_info_outline_black_24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            app:boxBackgroundColor="@color/colorPrimary"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            app:endIconDrawable="@drawable/ic_info_outline_black_24dp"
-            app:endIconMode="custom"
-            app:hintTextColor="@color/colorAccent">
+            android:background="@color/colorPrimary"
+            android:gravity="center">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:hint="Surname"
-                android:layout_width="match_parent"
+            <EditText
+                android:id="@+id/surnameEditTextInput"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:hint="Surname"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
+                android:padding="8sp" />
+
+
+        </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/startCheckInBtn"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:textColor="@color/colorPrimaryDark"
-            android:text="@string/check_in_btn_text"
-            android:padding="16dp"
+            android:text="Start Checkin"
+            android:padding="8dp"
             android:layout_gravity="center_horizontal"
             app:elevation="1dp"/>
 
