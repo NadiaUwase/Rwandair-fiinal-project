@@ -7,6 +7,30 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/homebackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="home_background_image"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/air_plane" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="logo"
+        app:srcCompat="@drawable/rwandair_logo" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/checkInPageBtn"
         style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
@@ -14,6 +38,9 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:text="@string/check_in_btn_text"
+        android:textAllCaps="false"
+        android:textColor="#021171"
+        android:textStyle="normal|bold"
         android:layout_marginBottom="40dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
