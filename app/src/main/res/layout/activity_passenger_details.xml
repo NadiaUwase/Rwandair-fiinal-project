@@ -1,54 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     android:orientation="vertical"
     tools:context=".PassengerDetailsActivity">
 
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/page_navigation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="20dp">
 
         <ImageView
+            android:layout_weight="1"
+            android:gravity="start|left"
+            android:layout_gravity="start|center_vertical"
             android:id="@+id/back_to_flight_selection"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/back"
-            android:layout_alignParentStart="true" />
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="true"
+            android:src="@drawable/back" />
         <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
             android:gravity="center_horizontal"
             android:text="Passenger Details"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"/>
         <TextView
+            android:layout_gravity="end|center_vertical"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
             android:gravity="center_horizontal"
             android:text="Cancel"
             android:textSize="18sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/flight_details_wrapper"
         android:layout_below="@id/page_navigation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -167,6 +168,7 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
+        android:layout_below="@id/flight_details_wrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -242,8 +244,9 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="356dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:gravity="bottom">
@@ -259,4 +262,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>
