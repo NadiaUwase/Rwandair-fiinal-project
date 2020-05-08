@@ -38,10 +38,12 @@ public class CheckinActivity extends AppCompatActivity {
         checkinGuideIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Show check in guide", Toast.LENGTH_SHORT);
-                toast.show();
+                Intent intent = new Intent(CheckinActivity.this,
+                        Reference_number_infoActivity.class);
+                startActivity(intent);
             }
         });
+
     }
 
     public void startCheckInClick() {
