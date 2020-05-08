@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="<"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+
+            />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_heading"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:gravity="end"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_txt"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/security"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/content_paragraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/security_info"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"/>
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/security_question"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textColor="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorPrimary"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:textColor="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorPrimary"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/content_paragraph2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sec_qst2"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textColor="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorPrimary"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:textColor="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorPrimary"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/termsConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_conditions"
+        android:buttonTint="@color/colorPrimary"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boarding_pass_btn_txt"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>

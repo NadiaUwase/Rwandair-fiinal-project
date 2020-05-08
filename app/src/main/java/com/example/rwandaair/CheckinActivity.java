@@ -51,7 +51,7 @@ public class CheckinActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CheckinActivity.this,
-                        BoardingPassActivity.class);
+                        FlightSelectionActivity.class);
                 startActivity(intent); // startActivity allow you to move
             }
         });
