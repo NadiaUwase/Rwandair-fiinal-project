@@ -12,6 +12,7 @@
         <activity android:name=".PassengerDetailsActivity"></activity>
         <activity android:name=".FlightSelectionActivity" />
         <activity android:name=".BoardingPassActivity" />
+        <activity android:name=".Reference_number_infoActivity"></activity>
         <activity android:name=".CheckinActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
